@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayam Geprek Dini - Lezatnya Tiada Tara</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-icon">
+          DFC
+        </div>
+        <div>
+          <h1>Ayam Geprek <span class="logo-accent">Dini</span></h1>
+          <div class="logo-tagline">Lezatnya Tiada Tara</div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></div>
+        <ul id="navUl">
+          <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
+          <li><a href="#" class="nav-link" data-target="menu">Menu</a></li>
+          <li><a href="#" class="nav-link" data-target="about">Tentang Kami</a></li>
+          <li><a href="#" class="nav-link" data-target="services">Layanan</a></li>
+          <li><a href="#" class="nav-link" data-target="locations">Cabang & Peta</a></li>
+          <li><a href="#" class="nav-link" data-target="contact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-toggle" title="Buka keranjang" id="openCartBtn">
+        <div class="cart-fab">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Keranjang</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section id="home" class="page-section active">
+      <div class="hero">
+        <div class="hero-grid">
+          <div class="hero-card">
+            <div class="poster-wrap" id="posterWrap" aria-hidden="false">
+              <div class="poster active small-img" data-img="img/outlet1.png">
+                <div class="label">Ayam Geprek Dini — Sambal Rahasia Keluarga</div>
+              </div>
+              <div class="poster" data-img="img/outlet2.png">
+                <div class="label">Geprek sambal hijau — Favorit Pelanggan</div>
+              </div>
+              <div class="poster small-img" data-img="img/outlet3.png">
+                <div class="label">Paket Hemat & Catering untuk acara</div>
+              </div>
+            </div>
+
+            <h2>Ayam Geprek Dini</h2>
+            <p>Rasakan kelezatan ayam geprek dengan sambal spesial yang menggugah selera. Olahan rumahan, bahan pilihan, dan layanan cepat.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary nav-link" href="#" data-target="menu"><i class="fa-solid fa-list"></i> Lihat Menu</a>
+              <a class="btn btn-outline" href="https://wa.me/6285212234557?text=Halo%20Ayam%20Geprek%20Dini!%20Saya%20mau%20tanya%20menu." target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat Sekarang</a>
+            </div>
+          </div>
+
+          <aside class="aside-card">
+            <div class="quick-contact-info">
+              <div>
+                <div class="quick-contact-label">Pesan cepat ke WhatsApp</div>
+                <div class="quick-contact-number">0852-1223-4557</div>
+              </div>
+              <div class="quick-contact-right">
+                <div class="quick-contact-subtitle"></div>
+                <div class="quick-contact-status"></div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="quick-contact-desc">Tambah menu ke keranjang dan lakukan 1x checkout. Atau klik harga untuk pesan cepat.</div>
+
+            <div class="quick-action-buttons">
+              <button class="small-btn" onclick="scrollToSection('menu')">Lihat Menu</button>
+              <button class="small-btn" onclick="scrollToSection('locations')">Lokasi Cabang</button>
+              <button class="small-btn" onclick="scrollToSection('contact')">Kontak</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="page-section">
+      <h2 class="section-title">Menu Kami</h2>
+      <div class="menu-grid" id="menuGrid">
+        <!-- JS akan render item menu di sini -->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page-section">
+      <h2 class="section-title">Tentang Kami</h2>
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>Sejarah Singkat</h3>
+          <p>UMKM Ayam Geprek Dini didirikan pada tahun 2022, ketika pemiliknya masih duduk di kelas 3 SMA. Usaha ini bermula dari hal sederhana: adiknya sangat menyukai fried chicken, sehingga ibunya membantu membuka usaha kecil di rumah. Awalnya, penjualan dilakukan secara online melalui media sosial dan layanan pesan antar.</p>
+          <p>Tanpa disangka, respon pelanggan sangat positif. Rasa ayam yang gurih, pedas yang bisa dipilih sesuai selera, serta harga yang ramah di kantong membuat Ayam Geprek Dini cepat dikenal masyarakat sekitar. Seiring meningkatnya permintaan, usaha ini kemudian mulai membuka outlet kecil, yang terus berkembang dari waktu ke waktu.</p>
+          <p>Perjalanan usaha yang dimulai dari rumah akhirnya membawa Ayam Geprek Dini memiliki hingga 3 cabang saat ini. Hingga hari ini, UMKM ini terus bertahan dan berkembang dengan menjaga kualitas rasa, pelayanan yang ramah, serta inovasi menu untuk memenuhi kebutuhan pelanggan.</p>
+        </div>
+
+        <div class="about-image">
+          <img id="aboutImage" src="img/tentang kami.png" alt="Tentang Ayam Geprek Dini">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="page-section">
+      <h2 class="section-title">Layanan Kami</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-truck"></i></div>
+          <h4>Pesan Antar</h4>
+          <p>Layanan antar untuk area cabang kami dengan kurir terpercaya.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
+          <h4>Order via Mitra</h4>
+          <p>Tersedia pada GrabFood / GoFood atau mitra lokal sesuai cabang.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-users"></i></div>
+          <h4>Catering & Paket</h4>
+          <p>Paket catering untuk acara kecil hingga menengah, hubungi WA untuk penawaran.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-headset"></i></div>
+          <h4>Dukungan Pelanggan</h4>
+          <p>Bantuan pesanan, komplain, dan refund melalui WhatsApp resmi kami.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CABANG -->
+    <section id="locations" class="page-section">
+      <h2 class="section-title">Cabang Kami</h2>
+
+      <div class="locations-grid">
+        <div>
+          <div class="branches-grid" role="list">
+            <div class="branch-card" role="listitem">
+              <h5>Cabang 1 — Pusat</h5>
+              <div class="branch-meta">Jl. Pengairan, SIDRAP</div>
+              <div class="branch-meta">Jam: 08:00 - habis</div>
+              <div class="branch-actions">
+                <a href="https://www.google.com/maps?q=Ayam+Geprek+Dini+Pangkajene+Sidrap+Jalan+Pengairan" target="_blank" rel="noopener">📍 Buka di Google Maps</a>
+              </div>
+            </div>
+
+            <div class="branch-card" role="listitem">
+              <h5>Cabang 2 — Pangkajene</h5>
+              <div class="branch-meta">Jl. Musang (Depan SDIT AT-Tauhid)</div>
+              <div class="branch-meta">Jam: 06:00 - habis</div>
+              <div class="branch-actions">
+                <a href="https://maps.app.goo.gl/JPNcJHGVyBmisVAy8?g_st=ipc" target="_blank" rel="noopener">📍 Buka di Google Maps</a>
+              </div>
+            </div>
+
+            <div class="branch-card" role="listitem">
+              <h5>Cabang 3 — Pangkajene</h5>
+              <div class="branch-meta">Jl. Lanto Dg. Pasewang</div>
+              <div class="branch-meta">Jam: 08:00 - habis</div>
+              <div class="branch-actions">
+                <a href="https://maps.app.goo.gl/43vp6VSFhLLWCR789?g_st=ipc" target="_blank" rel="noopener">📍 Buka di Google Maps</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="locations-sidebar">
+          <div class="aside-card">
+            <h4>Informasi Cabang</h4>
+            <div class="branch-info">
+              <div><i class="fas fa-phone"></i> 0852-1223-4557 (WhatsApp)</div>
+              <div class="branch-tip">Silakan klik "Buka di Google Maps" untuk navigasi.</div>
+            </div>
+          </div>
+
+          <div class="aside-card">
+            <h4>Tips</h4>
+            <p>Jika link Google Maps kosong, gantikan dengan koordinat atau alamat lengkap cabang.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page-section">
+      <h2 class="section-title">Kontak & Pesanan</h2>
+      <div class="contact-grid">
+        <div class="contact-form-card">
+          <h3>Form Cepat</h3>
+          <p>Cukup isi Nama Lengkap, Pesanan (opsional jika Anda ingin menulis pesan atau detail) dan Alamat. Atau gunakan keranjang untuk checkout 1x ke WhatsApp.</p>
+          <form id="quickContact">
+            <div class="form-row">
+              <label>Nama Lengkap</label>
+              <input type="text" id="contactName" required placeholder="Nama Anda">
+            </div>
+            <div class="form-row">
+              <label>Pesanan (opsional)</label>
+              <input type="text" id="contactOrder" placeholder="Mis: Ayam Geprek Original x2">
+            </div>
+            <div class="form-row">
+              <label>Alamat Pengantaran</label>
+              <textarea id="contactAddress" placeholder="Alamat lengkap untuk pengantaran" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Kirim ke WhatsApp</button>
+              <button type="button" class="small-btn" onclick="openCart()">Buka Keranjang</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+          <div class="aside-card">
+            <h4>Informasi</h4>
+            <div class="contact-info">
+              <div><i class="fas fa-map-marker-alt"></i> Jl. Pengairan, Pangkajene</div>
+              <div><i class="fas fa-phone"></i> 0852-1223-4557 (WhatsApp)</div>
+              <div><i class="fas fa-clock"></i> Senin - Minggu: 09:00 - 17:00</div>
+            </div>
+          </div>
+
+          <div class="aside-card">
+            <h4>Sosial media</h4>
+            <div class="social" aria-label="Sosial media Ayam Geprek Dini">
+              <a href="https://instagram.com/nrfdini.nyy_" class="small-btn" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://web.facebook.com/ayamgeprekdini" class="small-btn" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://wa.me/6282292462912" class="small-btn" target="_blank" rel="noopener" title="WhatsApp 082292462912">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://wa.me/6285212234557" class="small-btn" target="_blank" rel="noopener" title="WhatsApp 085212234557">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.grab.com/id/search/?q=ayamgeprekdini" class="small-btn" target="_blank" rel="noopener" title="Grab - ayamgeprekdini">
+                <i class="fas fa-utensils"></i>
+              </a>
+            </div>
+
+            <div class="social-handles">
+              IG: <strong>nrfdini.nyy_</strong><br>
+              FB: <strong>kartinimuhadii</strong><br>
+              WA: <strong>082292462912</strong> / <strong>085212234557</strong><br>
+              Grab: <strong>ayamgeprekdini</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Ayam Geprek Dini</h4>
+            <p>Menghadirkan kelezatan ayam geprek otentik sejak 2022. Pesan via WhatsApp untuk layanan cepat.</p>
+          </div>
+          <div>
+            <h4>Menu Populer</h4>
+            <ul class="footer-menu">
+              <li>Ayam Geprek sambal hijau</li>
+              <li>Ayam Geprek sambal merah</li>
+              <li>Ayam krispy</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Link Cepat</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+              <li><a href="#" class="nav-link" data-target="menu">Menu</a></li>
+              <li><a href="#" class="nav-link" data-target="contact">Kontak</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontak</h4>
+            <div class="footer-contact">0852-1223-4557 (WhatsApp)</div>
+            <div class="social">
+              <a href="https://instagram.com/nrfdini.nyy_" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+              <a href="https://facebook.com/kartinimuhadii" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://wa.me/6282292462912" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          &copy; 2025 Ayam Geprek Dini. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- CART PANEL -->
+  <div class="cart-panel" aria-hidden="false">
+    <div class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Keranjang belanja">
+      <div class="cart-header">
+        <div>Keranjang Anda <span id="cartItemCount">0 item</span></div>
+        <div>
+          <button class="small-btn" onclick="closeCart()">Tutup</button>
+        </div>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <div>Total:</div>
+          <div id="cartTotal">Rp 0</div>
+        </div>
+        <div class="cart-actions">
+          <button class="small-btn" onclick="clearCart()">Kosongkan</button>
+          <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <h3 id="checkoutTitle">Checkout & Kirim ke WhatsApp</h3>
+      <form id="checkoutForm">
+        <div class="form-row">
+          <label>Nama Lengkap</label>
+          <input type="text" id="checkoutName" placeholder="Nama penerima" required>
+        </div>
+        <div class="form-row">
+          <label>Alamat Pengantaran</label>
+          <textarea id="checkoutAddress" placeholder="Alamat lengkap untuk pengantaran" required></textarea>
+        </div>
+        <div class="form-row">
+          <label>Catatan (opsional)</label>
+          <input type="text" id="checkoutNote" placeholder="Contoh: Tanpa daun kemangi">
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="small-btn" onclick="closeCheckout()">Batal</button>
+          <button type="submit" class="checkout-btn"><i class="fa-brands fa-whatsapp"></i> Kirim Pesanan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
